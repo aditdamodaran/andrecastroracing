@@ -6,15 +6,21 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    let { edges: posts } = data.allMarkdownRemark
+    posts = posts.map(({ node: post }) => post)
+
+    // Remove any posts without featured images from the index page
+    if (this.props.index){
+      posts = posts.filter(post => post.frontmatter.featuredimage)
+    }
 
     return (
-      <div className="columns is-multiline">
+      <div className="blog-roll columns is-multiline">
         {posts &&
-          posts.map(({ node: post }) => (
+          posts.map((post) => (
             <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
+              <Link to={post.fields.slug}><article
+                className={`blog-list-item tile is-child ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
@@ -29,7 +35,8 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
+                  
+                  {/*<p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
                       to={post.fields.slug}
@@ -40,17 +47,17 @@ class BlogRoll extends React.Component {
                     <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
                     </span>
-                  </p>
+                    </p>*/}
                 </header>
-                <p>
+                {/*<p>
                   {post.excerpt}
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
                     Keep Reading →
                   </Link>
-                </p>
-              </article>
+                </p>*/}
+              </article></Link>
             </div>
           ))}
       </div>
@@ -66,7 +73,7 @@ BlogRoll.propTypes = {
   }),
 }
 
-export default () => (
+export default (props) => (
   <StaticQuery
     query={graphql`
       query BlogRollQuery {
@@ -99,6 +106,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data, count) => <BlogRoll data={data} count={count} index={props.index}/>}
   />
 )

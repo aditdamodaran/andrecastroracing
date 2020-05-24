@@ -1,5 +1,17 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+$folder: './../fonts/Inter'
+@mixin font-face($family, $filename, $folder, $style, $weight)
+  @font-face
+    font-family: $family
+    src: url('#{$folder}/#{$filename}.ttf') format("truetype")
+
+@include font-face('Inter-Light', 'Inter-Light', $folder, normal, 300)
+@include font-face('Inter-Regular', 'Inter-Regular', $folder, normal, 400)
+@include font-face('Inter-Medium', 'Inter-Medium', $folder, normal, 500)
+@include font-face('Inter-SemiBold', 'Inter-SemiBold', $folder, normal, 600)
+@include font-face('Inter-Bold', 'Inter-Bold', $folder, normal, 700)
+
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
@@ -31,7 +43,7 @@ $black: #2b2523
 // Helper Classes
 .full-width-image-container
   width: 100vw
-  height: 400px
+  height: 90vh
   position: relative
   left: 50%
   right: 50%
@@ -44,7 +56,7 @@ $black: #2b2523
 
 .full-width-image
     width: 100vw
-    height: 400px
+    height: 90vh
     background-size: cover
     background-position: bottom
     display: flex
@@ -113,14 +125,19 @@ $menu-label-color: $white-ter
     display: inline
 
 // blog roll
+.blog-list-item
+  cursor: pointer
+  transition: 0.2s
+.blog-list-item:hover
+  opacity: 0.5
+
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  // margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 100%
 
 
 @import "~bulma"
@@ -129,12 +146,22 @@ $menu-label-color: $white-ter
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    // flex-basis: 50%;
 
 +mobile
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
     text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    // max-width: 70%;
+    // margin: 0 0 1em;
+
+
+// OVERRIDES
+.navbar 
+  position: fixed
+  width: 100%
+
+.blog-roll .column
+  padding: 0
+
