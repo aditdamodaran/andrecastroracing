@@ -125,20 +125,55 @@ $menu-label-color: $white-ter
     display: inline
 
 // blog roll
-.blog-list-item
-  cursor: pointer
-  transition: 0.2s
-.blog-list-item:hover
-  opacity: 0.5
-
-.blog-list-item.is-featured
-  background-color: #d6400033
-.blog-list-item header
+.image-gallery
+  overflow: hidden
+  
+.gallery-tile-inner
+  text-align: center
   display: flex
-  // margin-bottom: 1em
-.blog-list-item .featured-thumbnail
-  flex-basis: 100%
 
+.overlay
+  width: 100%
+  height: 100%
+  background: white
+  opacity: 0
+  transition: 0.3s
+
+.gallery-tile-inner .overlay-title
+  opacity: 0
+  transition: 0.3s
+
+.gallery-tile-inner:hover .overlay-title
+  opacity: 1
+
+.overlay:hover
+  opacity: 0.7
+
+.blog-list-item header
+  display: grid
+  // margin-bottom: 1em
+  // .blog-list-item .featured-thumbnail
+
+.blog-post-tiles
+  margin: 0.5rem 0
+
+.square
+  height: 50vw
+
+.overlay-title
+  opacity: 1
+  transition: 0.3s
+  z-index: 2
+  align-self: center
+  position: absolute
+  text-align: center
+  color: black
+  font-family: "Inter-Bold"
+  width: 50%
+  font-size: 1.2rem
+
+.overlay-title:hover
+  opacity: 1
 
 @import "~bulma"
 
@@ -152,9 +187,15 @@ $menu-label-color: $white-ter
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
+    text-align: center
     // max-width: 70%;
     // margin: 0 0 1em;
+  
+  .gallery-tile-half
+    width: 100%
+    height: 50vw
+  .overlay-title
+    display: none
 
 
 // OVERRIDES
@@ -164,4 +205,7 @@ $menu-label-color: $white-ter
 
 .blog-roll .column
   padding: 0
+
+.tile.is-ancestor
+  margin: 0
 

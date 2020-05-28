@@ -88,7 +88,7 @@ export const IndexPageTemplate = ({
                     {/*<h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>*/}
-                    <p>{description}</p>
+                    <p>{/*description*/}</p>
                   </div>
                 </div>
 
@@ -112,7 +112,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
     
-    <div className="">
+    <div className="blog-post-tiles">
       <BlogRoll index={index}/>     
     </div>
 
@@ -183,7 +183,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 2048, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

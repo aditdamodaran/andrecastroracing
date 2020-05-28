@@ -15,53 +15,79 @@ class BlogRoll extends React.Component {
     }
 
     return (
-      <div className="blog-roll columns is-multiline">
-        {posts &&
-          posts.map((post) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <Link to={post.fields.slug}><article
-                className={`blog-list-item tile is-child ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  
-                  {/*<p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                    </p>*/}
-                </header>
-                {/*<p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>*/}
-              </article></Link>
+      <div className="tile is-ancestor image-gallery">
+          {/* Vertical LEFT Half */}
+          <div className="tile is-6 is-vertical">
+
+            <Link className="tile gallery-tile-half" to={posts[0].fields.slug}>
+              <div className="gallery-tile-inner"
+                style={{
+                  backgroundColor : 'maroon',
+                  backgroundImage : `url(${posts[0].frontmatter.featuredimage.childImageSharp.fluid.src})`,
+                  backgroundPosition: 'center center',
+                  width: '100%',
+                  height: '100%',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: 'cover'
+                }}>
+                <div className="overlay">
+                </div>
+                <div className="overlay-title">
+                  {posts[0].frontmatter.title}
+                </div>
+              </div>
+            </Link>
+
+            <Link className="tile gallery-tile-half" to={posts[1].fields.slug}>
+              <div className="gallery-tile-inner"
+                style={{
+                  backgroundColor : 'maroon',
+                  backgroundImage : `url(${posts[1].frontmatter.featuredimage.childImageSharp.fluid.src})`,
+                  backgroundPosition: 'center center',
+                  width: '100%',
+                  height: '100%',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: 'cover'
+                }}>
+                <div className="overlay">
+                </div>
+                <div className="overlay-title">
+                  {posts[1].frontmatter.title}
+                </div>
+              </div>
+            </Link>
+
+          </div>
+          
+          
+          {/* Vertical RIGHT Half */}
+          <Link 
+            className="tile square" to={posts[2].fields.slug}
+          >
+            <div className="gallery-tile-inner"
+              style={{
+                backgroundColor : 'maroon',
+                backgroundImage : `url(${posts[2].frontmatter.featuredimage.childImageSharp.fluid.src})`,
+                backgroundPosition: 'center center',
+                width: '100%',
+                height: '100%',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover'
+              }}>
+              <div className="overlay">
+              </div>
+              <div className="overlay-title">
+                {posts[2].frontmatter.title}
+              </div>
             </div>
-          ))}
+          </Link>
+        
       </div>
     )
+
+  
+    
+
   }
 }
 
@@ -95,7 +121,7 @@ export default (props) => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 1000, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
