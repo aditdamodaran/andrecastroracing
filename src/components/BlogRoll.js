@@ -34,7 +34,7 @@ class BlogRoll extends React.Component {
 
             <Link className="tile gallery-tile-half" to={posts[1].fields.slug}>
               <BackgroundImage className="gallery-tile-inner"
-              fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
+              fluid={posts[1].frontmatter.featuredimage.childImageSharp.fluid}>
                 <div className="overlay">
                 </div>
                 <div className="overlay-title">
