@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import BackgroundImage from 'gatsby-background-image'
 
 class BlogRoll extends React.Component {
   render() {
@@ -20,41 +21,25 @@ class BlogRoll extends React.Component {
           <div className="tile is-6 is-vertical">
 
             <Link className="tile gallery-tile-half" to={posts[0].fields.slug}>
-              <div className="gallery-tile-inner"
-                style={{
-                  backgroundColor : 'maroon',
-                  backgroundImage : `url(${posts[0].frontmatter.featuredimage.childImageSharp.fluid.src})`,
-                  backgroundPosition: 'center center',
-                  width: '100%',
-                  height: '100%',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'cover'
-                }}>
+              <BackgroundImage className="gallery-tile-inner"
+                fluid={posts[0].frontmatter.featuredimage.childImageSharp.fluid}>
                 <div className="overlay">
                 </div>
                 <div className="overlay-title">
                   {posts[0].frontmatter.title}
                 </div>
-              </div>
+              </BackgroundImage>
             </Link>
 
             <Link className="tile gallery-tile-half" to={posts[1].fields.slug}>
-              <div className="gallery-tile-inner"
-                style={{
-                  backgroundColor : 'maroon',
-                  backgroundImage : `url(${posts[1].frontmatter.featuredimage.childImageSharp.fluid.src})`,
-                  backgroundPosition: 'center center',
-                  width: '100%',
-                  height: '100%',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'cover'
-                }}>
+              <BackgroundImage className="gallery-tile-inner"
+                fluid={posts[1].frontmatter.featuredimage.childImageSharp.fluid}>
                 <div className="overlay">
                 </div>
                 <div className="overlay-title">
                   {posts[1].frontmatter.title}
                 </div>
-              </div>
+              </BackgroundImage>
             </Link>
 
           </div>
@@ -64,22 +49,14 @@ class BlogRoll extends React.Component {
           <Link 
             className="tile square" to={posts[2].fields.slug}
           >
-            <div className="gallery-tile-inner"
-              style={{
-                backgroundColor : 'maroon',
-                backgroundImage : `url(${posts[2].frontmatter.featuredimage.childImageSharp.fluid.src})`,
-                backgroundPosition: 'center center',
-                width: '100%',
-                height: '100%',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover'
-              }}>
+            <BackgroundImage className="gallery-tile-inner"
+              fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
               <div className="overlay">
               </div>
               <div className="overlay-title">
                 {posts[2].frontmatter.title}
               </div>
-            </div>
+            </BackgroundImage>
           </Link>
         
       </div>
