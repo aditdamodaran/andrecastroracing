@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: A ROLLER COASTER START OF THE SEASON FOR VENTURI AND CASTRO
+title: A Roller Coaster Start of the Season for Venturi and Castro
 date: 2019-06-01T20:04:01.169Z
 description: The first part of the 2019 season has been a roller coaster for
   Florian Venturi and Andre Castro and they will both enter the Brands Hatch
