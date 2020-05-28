@@ -20,13 +20,6 @@ class BlogRoll extends React.Component {
           {/* Vertical LEFT Half */}
           <div className="tile is-6 is-vertical">
 
-          <PreviewCompatibleImage
-            imageInfo={{
-              image: posts[1].frontmatter.featuredimage,
-              alt: `featured image thumbnail for post ${posts[1].frontmatter.title}`,
-            }}
-          />
-
 
             <Link className="tile gallery-tile-half" to={posts[0].fields.slug}>
               <BackgroundImage className="gallery-tile-inner"
@@ -41,7 +34,7 @@ class BlogRoll extends React.Component {
 
             <Link className="tile gallery-tile-half" to={posts[1].fields.slug}>
               <BackgroundImage className="gallery-tile-inner"
-                fluid={posts[1].frontmatter.featuredimage.childImageSharp.fluid}>
+              fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
                 <div className="overlay">
                 </div>
                 <div className="overlay-title">
@@ -58,7 +51,7 @@ class BlogRoll extends React.Component {
             className="tile square" to={posts[2].fields.slug}
           >
             <BackgroundImage className="gallery-tile-inner"
-              fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
+            fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
               <div className="overlay">
               </div>
               <div className="overlay-title">
