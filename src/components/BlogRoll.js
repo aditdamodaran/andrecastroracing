@@ -20,6 +20,14 @@ class BlogRoll extends React.Component {
           {/* Vertical LEFT Half */}
           <div className="tile is-6 is-vertical">
 
+          <PreviewCompatibleImage
+            imageInfo={{
+              image: posts[1].frontmatter.featuredimage,
+              alt: `featured image thumbnail for post ${posts[1].frontmatter.title}`,
+            }}
+          />
+
+
             <Link className="tile gallery-tile-half" to={posts[0].fields.slug}>
               <BackgroundImage className="gallery-tile-inner"
                 fluid={posts[0].frontmatter.featuredimage.childImageSharp.fluid}>
