@@ -14,11 +14,11 @@ $folder: './../fonts/Inter'
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+$acr-primary: #d24b4d
+$acr-secondary: #333
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: $acr-primary
+$primary-invert: $acr-secondary
 $body-color: #333
 $black: #2b2523
 
@@ -100,9 +100,9 @@ footer.footer
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+$menu-item-active-color: $acr-secondary
+$menu-item-active-background-color:	$acr-secondary
+$menu-list-border-left: 1px solid $acr-secondary
 $menu-label-color: $white-ter
 
 
@@ -129,6 +129,7 @@ $menu-label-color: $white-ter
   overflow: hidden
 
 .gallery-tile-inner
+  height: 100%
   width: 100%
   text-align: center
   justify-content: center
@@ -170,11 +171,52 @@ $menu-label-color: $white-ter
   position: absolute
   text-align: center
   color: black
-  font-family: "Inter-Bold"
-  font-size: 1.2rem
+  h2
+    font-family: "Inter-Bold"
+    font-size: 1.2rem
+  p
+    font-family: "Inter-Regular"
+    font-size: 0.9rem
 
-.overlay-title:hover
-  opacity: 1
+.overlay-title:hover + .overlay
+  opacity: 0.7
+
+// Content Bar (general)
+.content-bar
+  display: grid
+  width: 100%
+  overflow: hidden
+  padding: 3% 5% 2% 5%
+  .title-container
+    justify-content: center
+    align-content: center
+    text-align: center
+  .title
+    text-align: center
+    font-size: 1.4rem
+    font-family: "Inter-Bold"
+    color: white
+    text-transform: uppercase
+  .images
+    display: grid
+    grid-template-columns: 6fr 7fr 6fr
+    column-gap: 5rem
+    padding: 2% 0%
+    width: 60%
+    justify-self: center
+  .images > *
+    margin: 0% 5%
+    padding: 2% 5%
+
+
+
+
+  
+
+
+
+// .overlay-title:hover
+//   opacity: 1
 
 @import "~bulma"
 
@@ -197,6 +239,15 @@ $menu-label-color: $white-ter
     height: 50vw
   .overlay-title
     display: none
+  
+  .content-bar
+    .title
+      font-size: 1em
+    .images
+      display: grid
+      width: 100%
+      column-gap: 3rem
+      padding: 5% 0%
 
 
 // OVERRIDES

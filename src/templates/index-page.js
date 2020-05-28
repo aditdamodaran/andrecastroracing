@@ -5,6 +5,8 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import ContentBar from '../components/ContentBar'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const IndexPageTemplate = ({
   image,
@@ -37,7 +39,7 @@ export const IndexPageTemplate = ({
           flexDirection: 'column',
         }}
       >
-        <h1
+        {/*<h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow:
@@ -62,7 +64,7 @@ export const IndexPageTemplate = ({
           }}
         >
           {subheading}
-        </h3>
+        </h3>*/}
       </div>
     </div>
     <section className="section section--gradient">
@@ -88,7 +90,7 @@ export const IndexPageTemplate = ({
                     {/*<h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>*/}
-                    <p>{/*description*/}</p>
+                    <p>{description}</p>
                   </div>
                 </div>
 
@@ -115,8 +117,28 @@ export const IndexPageTemplate = ({
     <div className="blog-post-tiles">
       <BlogRoll index={index}/>     
     </div>
+    
+    <section className="partners">
+      <ContentBar 
+        text={'Partners'} 
+        color={'black'}
+        images={
+          [
+            intro.blurbs[0],
+            intro.blurbs[1],
+            intro.blurbs[2]
+          ]
+        }
+      />
+    </section>
+
+
+
+
+
 
   </div>
+  
 )
 
 IndexPageTemplate.propTypes = {

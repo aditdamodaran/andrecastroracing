@@ -12,23 +12,23 @@ mainpitch:
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
 description: >-
-  Andre, a first-generation Colombian-American racecar driver, has been behind the wheel since he was seven. Even with limited resources and the added challenge of growing up in New York City, Andre has persevered to become one of the top young drivers from the United States, advancing to become a finalist for the 2016 Team USA Scholarship. Aside from currently racing in the NASCAR Whelen Euro Series, Andre is a brilliant college student majoring in Business-Economics at the University of Chicago. He is also an avid actor, having participated as the lead role in several theater productions in high-school and college. It's this unique blend of raw racing talent, a meticulous work ethic, and comfort performing in the spotlight that sets Andre apart. He is currently proving himself to be a front runner during his rookie season racing in the prestigious NASCAR Whelen Euro Series for the well-established PK Carsport, having led the most laps of anyone in the whole series so far - he has also amassed two podium finishes and two Rookie Cup wins. Andre is looking for 2019 partnerships to be able to complete his championship challenge.
+  Andre, a first-generation Colombian-American racecar driver, has been behind the wheel since he was seven. Even with limited resources and the added challenge of growing up in New York City, Andre has persevered to become one of the top young drivers from the United States, advancing to become a finalist for the 2016 Team USA Scholarship. Aside from currently racing in the NASCAR Whelen Euro Series, Andre is a college student majoring in Business-Economics at the University of Chicago. He is also an avid actor, having participated as the lead role in several theater productions in high-school and college. It's this unique blend of raw racing talent, a meticulous work ethic, and comfort performing in the spotlight that sets Andre apart. He is currently proving himself to be a front runner during his rookie season racing in the prestigious NASCAR Whelen Euro Series for the well-established PK Carsport, having led the most laps of anyone in the whole series so far - he has also amassed two podium finishes and two Rookie Cup wins. 
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/pkcarsport.png
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
         variety of coffee beans grown with great care for the environment and
         local communities. Check our post or contact us directly for current
         availability.
-    - image: /img/coffee-gear.png
+    - image: /img/powerkitshopwhite.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
         tools for every taste and experience level. No matter if you roast your
         own beans or just bought your first french press, you’ll find a gadget
         to fall in love with in our shop.
-    - image: /img/tutorials.png
+    - image: /img/teamusascholarshipclear.png
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
         fancy new Chemex but have no clue how to use it? Don't worry, we’re here

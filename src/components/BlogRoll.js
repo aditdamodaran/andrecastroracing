@@ -24,10 +24,11 @@ class BlogRoll extends React.Component {
             <Link className="tile gallery-tile-half" to={posts[0].fields.slug}>
               <BackgroundImage className="gallery-tile-inner"
                 fluid={posts[0].frontmatter.featuredimage.childImageSharp.fluid}>
-                <div className="overlay">
-                </div>
                 <div className="overlay-title">
-                  {posts[0].frontmatter.title}
+                  <h2>{posts[0].frontmatter.title}</h2>
+                  <p>Read more...</p>
+                </div>
+                <div className="overlay">
                 </div>
               </BackgroundImage>
             </Link>
@@ -35,10 +36,11 @@ class BlogRoll extends React.Component {
             <Link className="tile gallery-tile-half" to={posts[1].fields.slug}>
               <BackgroundImage className="gallery-tile-inner"
               fluid={posts[1].frontmatter.featuredimage.childImageSharp.fluid}>
-                <div className="overlay">
-                </div>
                 <div className="overlay-title">
-                  {posts[1].frontmatter.title}
+                  <h2>{posts[1].frontmatter.title}</h2>
+                  <p>Read more...</p>
+                </div>
+                <div className="overlay">
                 </div>
               </BackgroundImage>
             </Link>
@@ -52,10 +54,11 @@ class BlogRoll extends React.Component {
           >
             <BackgroundImage className="gallery-tile-inner"
             fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
-              <div className="overlay">
-              </div>
               <div className="overlay-title">
-                {posts[2].frontmatter.title}
+                <h2>{posts[2].frontmatter.title}</h2>
+                <p>Read more...</p>
+              </div>
+              <div className="overlay">
               </div>
             </BackgroundImage>
           </Link>
