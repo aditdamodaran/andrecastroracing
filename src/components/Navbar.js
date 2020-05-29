@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
+import facebook from '../img/facebook-icon.svg'
+import instagram from '../img/instagram-icon.svg'
+import twitter from '../img/twitter-icon.svg'
+import youtube from '../img/youtube-icon.svg'
 import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
@@ -67,7 +71,7 @@ const Navbar = class extends React.Component {
                 Products
               </Link>
               <Link className="navbar-item" to="/blog">
-                Blog
+                News
               </Link>
               <Link className="navbar-item" to="/contact">
                 Contact
@@ -79,12 +83,42 @@ const Navbar = class extends React.Component {
             <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+                href="https://www.facebook.com/andrecastroracing/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="icon">
-                  <img src={github} alt="Github" />
+                <span className="icon facebook-icon">
+                  <img src={facebook} alt="Facebook" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="https://www.instagram.com/andrecastroracing/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon instagram-icon">
+                  <img src={instagram} alt="Instagram" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="https://twitter.com/acastroracing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon twitter-icon">
+                  <img src={twitter} alt="Twitter" />
+                </span>
+              </a>
+              <a
+                className="navbar-item"
+                href="https://www.youtube.com/user/AndreCastroRacing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon youtube-icon">
+                  <img src={youtube} alt="YouTube" />
                 </span>
               </a>
             </div>

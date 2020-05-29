@@ -1,16 +1,22 @@
 @import "~bulma/sass/utilities/initial-variables"
 
-$folder: './../fonts/Inter'
+$folderInter: './../fonts/Inter'
+$folderProxima: './../fonts/Proxima'
 @mixin font-face($family, $filename, $folder, $style, $weight)
   @font-face
     font-family: $family
     src: url('#{$folder}/#{$filename}.ttf') format("truetype")
 
-@include font-face('Inter-Light', 'Inter-Light', $folder, normal, 300)
-@include font-face('Inter-Regular', 'Inter-Regular', $folder, normal, 400)
-@include font-face('Inter-Medium', 'Inter-Medium', $folder, normal, 500)
-@include font-face('Inter-SemiBold', 'Inter-SemiBold', $folder, normal, 600)
-@include font-face('Inter-Bold', 'Inter-Bold', $folder, normal, 700)
+@include font-face('Inter-Light', 'Inter-Light', $folderInter, normal, 300)
+@include font-face('Inter-Regular', 'Inter-Regular', $folderInter, normal, 400)
+@include font-face('Inter-Medium', 'Inter-Medium', $folderInter, normal, 500)
+@include font-face('Inter-SemiBold', 'Inter-SemiBold', $folderInter, normal, 600)
+@include font-face('Inter-Bold', 'Inter-Bold', $folderInter, normal, 700)
+
+@include font-face('PN-Light', 'proxima_nova_light', $folderProxima, normal, 300)
+@include font-face('PN-Regular', 'proxima_nova_regular', $folderProxima, normal, 400)
+@include font-face('PN-SemiBold', 'proxima_nova_semibold', $folderProxima, normal, 600)
+@include font-face('PN-Bold', 'proxima_nova_bold', $folderProxima, normal, 700)
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -172,10 +178,10 @@ $menu-label-color: $white-ter
   text-align: center
   color: black
   h2
-    font-family: "Inter-Bold"
+    font-family: "PN-Bold"
     font-size: 1.2rem
   p
-    font-family: "Inter-Regular"
+    font-family: "PN-Regular"
     font-size: 0.9rem
 
 .overlay-title:hover + .overlay
@@ -194,7 +200,7 @@ $menu-label-color: $white-ter
   .title
     text-align: center
     font-size: 1.4rem
-    font-family: "Inter-Bold"
+    font-family: "PN-Bold"
     color: white
     text-transform: uppercase
   .images
@@ -207,6 +213,7 @@ $menu-label-color: $white-ter
   .images > *
     margin: 0% 5%
     padding: 2% 5%
+
 
 
 
@@ -225,6 +232,10 @@ $menu-label-color: $white-ter
 +tablet-only
   .blog-list-item .featured-thumbnail
     // flex-basis: 50%;
+
+  .navbar-end
+    display: flex
+    justify-content: center
 
 +mobile
   .blog-list-item header
@@ -248,6 +259,10 @@ $menu-label-color: $white-ter
       width: 100%
       column-gap: 3rem
       padding: 5% 0%
+  
+  .navbar-end
+    display: flex
+    justify-content: center
 
 
 // OVERRIDES
@@ -255,9 +270,15 @@ $menu-label-color: $white-ter
   position: fixed
   width: 100%
 
+#navMenu
+  text-transform: uppercase
+  font-size: 0.9rem
+  font-family: "PN-SemiBold"
+
 .blog-roll .column
   padding: 0
 
 .tile.is-ancestor
   margin: 0
+
 
