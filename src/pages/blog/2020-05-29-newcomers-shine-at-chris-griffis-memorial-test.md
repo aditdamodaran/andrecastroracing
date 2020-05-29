@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Newcomers Shine at Chris Griffis Memorial Test
-date: 2016-10-09T18:10:00.000Z
+date: 2016-11-28T19:10:00.000Z
 description: Matthew Brabham, the 2012 USF2000 champion who made his
   Indianapolis 500 debut earlier this year, posted the second fastest time
   overall while assisting six-time and defending champion team Cape Motorsports
