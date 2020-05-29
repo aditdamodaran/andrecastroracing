@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Estep and Exclusive Autosport Claim 2016 Championship
-date: 2020-05-28T20:15:52.484Z
+date: 2016-11-26T21:15:00.000Z
 description: "\n"
 featuredpost: true
 featuredimage: /img/formulatour1600.jpg
