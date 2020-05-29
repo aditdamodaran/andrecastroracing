@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Newman Wachs Racing Signs Young Rookie
-date: 2020-05-29T18:15:47.492Z
+date: 2016-11-29T19:15:00.000Z
 description: Newman Wachs Racing announced today the signing of 18-year-old
   racer Andre Castro for the upcoming Cooper Tires USF2000 Championship Powered
   by Mazda season.
