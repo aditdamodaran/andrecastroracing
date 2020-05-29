@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Legacy Autosport Focused on 2019 On Heels of Positive USF2000 Indy Test
-date: 2020-05-29T18:27:43.127Z
+date: 2019-05-29T18:27:00.000Z
 description: "Legacy Autosport fielded USF2000 cars for Alex Baron and Andre
   Castro at the recent Chris Griffis Memorial Test on the IMS road course "
 featuredpost: true
