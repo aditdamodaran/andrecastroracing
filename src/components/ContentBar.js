@@ -10,7 +10,7 @@ class ContentBar extends React.Component {
         style={{
             backgroundColor: props.color
         }}>
-            <div classname="title-container">
+            <div className="title-container">
                 <h4 className="title">{props.text}</h4>
             </div>
             <div className='images'>

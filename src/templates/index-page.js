@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useLayoutEffect, useState } from 'react';
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import ContentBar from '../components/ContentBar'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
+export const useWindowSize = () => {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+  return size;
+}
 
 export const IndexPageTemplate = ({
   image,
+  image2,
   title,
   heading,
   subheading,
@@ -23,9 +34,10 @@ export const IndexPageTemplate = ({
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          window.innerWidth > 768 ? 
+          (!!image.childImageSharp ? image.childImageSharp.fluid.src : image) :
+          (!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2)
         })`,
-        backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
       }}
     >
@@ -84,6 +96,7 @@ export const IndexPageTemplate = ({
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>*/}
+                {useWindowSize() ? undefined : undefined}
 
                 <div className="columns">
                   <div className="column is-12">
@@ -143,6 +156,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
@@ -160,6 +174,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
+        image2={frontmatter.image2}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -188,6 +203,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        image2 {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid

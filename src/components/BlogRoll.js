@@ -16,54 +16,110 @@ class BlogRoll extends React.Component {
     }
 
     return (
-      <div className="tile is-ancestor image-gallery">
-          {/* Vertical LEFT Half */}
-          <div className="tile is-6 is-vertical">
+      <div>
+        <div className="tile is-ancestor image-gallery">
+            {/* Vertical LEFT Half */}
+            <div className="tile is-6 is-vertical">
 
 
-            <Link className="tile gallery-tile-half" to={posts[0].fields.slug}>
+              <Link className="tile gallery-tile-half" to={posts[0].fields.slug}>
+                <BackgroundImage className="gallery-tile-inner"
+                  fluid={posts[0].frontmatter.featuredimage.childImageSharp.fluid}>
+                  <div className="overlay-title">
+                    <h2>{posts[0].frontmatter.title}</h2>
+                    <p>Read more...</p>
+                  </div>
+                  <div className="overlay">
+                  </div>
+                </BackgroundImage>
+              </Link>
+
+              <Link className="tile gallery-tile-half" to={posts[1].fields.slug}>
+                <BackgroundImage className="gallery-tile-inner"
+                fluid={posts[1].frontmatter.featuredimage.childImageSharp.fluid}>
+                  <div className="overlay-title">
+                    <h2>{posts[1].frontmatter.title}</h2>
+                    <p>Read more...</p>
+                  </div>
+                  <div className="overlay">
+                  </div>
+                </BackgroundImage>
+              </Link>
+
+            </div>
+            
+            
+            {/* Vertical RIGHT Half */}
+            <Link 
+              className="tile square" to={posts[2].fields.slug}
+            >
               <BackgroundImage className="gallery-tile-inner"
-                fluid={posts[0].frontmatter.featuredimage.childImageSharp.fluid}>
+              fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
                 <div className="overlay-title">
-                  <h2>{posts[0].frontmatter.title}</h2>
+                  <h2>{posts[2].frontmatter.title}</h2>
                   <p>Read more...</p>
                 </div>
                 <div className="overlay">
                 </div>
               </BackgroundImage>
             </Link>
+        </div>
 
-            <Link className="tile gallery-tile-half" to={posts[1].fields.slug}>
+        {!this.props.index ? 
+          <div className="tile is-ancestor image-gallery">
+            {/* Vertical LEFT Half */}
+            <Link 
+              className="tile square" to={posts[2].fields.slug}
+            >
               <BackgroundImage className="gallery-tile-inner"
-              fluid={posts[1].frontmatter.featuredimage.childImageSharp.fluid}>
+              fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
                 <div className="overlay-title">
-                  <h2>{posts[1].frontmatter.title}</h2>
+                  <h2>{posts[2].frontmatter.title}</h2>
                   <p>Read more...</p>
                 </div>
                 <div className="overlay">
                 </div>
               </BackgroundImage>
             </Link>
+            {/* Vertical RIGHT Half */}
+            <div className="tile is-6 is-vertical">
 
-          </div>
-          
-          
-          {/* Vertical RIGHT Half */}
-          <Link 
-            className="tile square" to={posts[2].fields.slug}
-          >
-            <BackgroundImage className="gallery-tile-inner"
-            fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
-              <div className="overlay-title">
-                <h2>{posts[2].frontmatter.title}</h2>
-                <p>Read more...</p>
-              </div>
-              <div className="overlay">
-              </div>
-            </BackgroundImage>
-          </Link>
-        
+
+              <Link className="tile gallery-tile-half" to={posts[0].fields.slug}>
+                <BackgroundImage className="gallery-tile-inner"
+                  fluid={posts[0].frontmatter.featuredimage.childImageSharp.fluid}>
+                  <div className="overlay-title">
+                    <h2>{posts[0].frontmatter.title}</h2>
+                    <p>Read more...</p>
+                  </div>
+                  <div className="overlay">
+                  </div>
+                </BackgroundImage>
+              </Link>
+
+              <Link className="tile gallery-tile-half" to={posts[1].fields.slug}>
+                <BackgroundImage className="gallery-tile-inner"
+                fluid={posts[1].frontmatter.featuredimage.childImageSharp.fluid}>
+                  <div className="overlay-title">
+                    <h2>{posts[1].frontmatter.title}</h2>
+                    <p>Read more...</p>
+                  </div>
+                  <div className="overlay">
+                  </div>
+                </BackgroundImage>
+              </Link>
+
+            </div>
+        </div>
+        : null}
+
+
+
+
+
+
       </div>
+
     )
 
   
