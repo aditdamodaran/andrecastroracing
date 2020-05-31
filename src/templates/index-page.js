@@ -1,22 +1,9 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types'
 
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import ContentBar from '../components/ContentBar'
-
-export const useWindowSize = () => {
-  const [size, setSize] = useState([0, 0]);
-  useLayoutEffect(() => {
-    function updateSize() {
-      setSize([window.innerWidth, window.innerHeight]);
-    }
-    window.addEventListener('resize', updateSize);
-    updateSize();
-    return () => window.removeEventListener('resize', updateSize);
-  }, []);
-  return size;
-}
 
 export const IndexPageTemplate = ({
   image,
@@ -28,16 +15,19 @@ export const IndexPageTemplate = ({
   description,
   intro,
   index
-}) => (
+}) => 
+{
+
+const imageURL = useWindowWidth() > 768 ? 
+(!!image.childImageSharp ? image.childImageSharp.fluid.src : image) :
+(!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2)
+
+return (
   <div>
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
-          window.innerWidth > 768 ? 
-          (!!image.childImageSharp ? image.childImageSharp.fluid.src : image) :
-          (!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2)
-        })`,
+        backgroundImage: `url(${imageURL})`,
         backgroundAttachment: `fixed`,
       }}
     >
@@ -96,7 +86,6 @@ export const IndexPageTemplate = ({
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>*/}
-                {useWindowSize() ? undefined : undefined}
 
                 <div className="columns">
                   <div className="column is-12">
@@ -152,7 +141,22 @@ export const IndexPageTemplate = ({
 
   </div>
   
-)
+)}
+
+const useWindowWidth = () => {
+  const [windowWidth, setWindowWidth ] = useState(window.innerWidth);
+
+  useEffect(() => {
+      const handleWindowResize = () => {
+          setWindowWidth(window.innerWidth);
+      };
+
+      window.addEventListener('resize', handleWindowResize);
+      return () => window.removeEventListener('resize', handleWindowResize);
+  },[]);
+
+  return windowWidth;
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
