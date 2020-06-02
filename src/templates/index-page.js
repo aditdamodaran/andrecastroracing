@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import ContentBar from '../components/ContentBar'
 import Media from 'react-media'
+import Parser from 'ua-parser-js'
 
 export const IndexPageTemplate = ({
   image,
@@ -24,6 +25,8 @@ export const IndexPageTemplate = ({
 // (!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2)
 // state = getDevice()
 // console.log(getDevice)
+let parser = new Parser()
+console.log(parser.getResult())
 
 return (
   <div>
