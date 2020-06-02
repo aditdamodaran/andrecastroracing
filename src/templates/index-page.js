@@ -31,14 +31,6 @@ state = (result === 'mobile') ? 'mobile' : 'desktop'
 
 return (
   <div>
-    <div
-      style={{
-        backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-    </div>
-
     <div> {/* Handles React-Media Conditional SSR Rendering*/}
       <Media
         queries={{ medium: "(min-width: 768px)" }}
@@ -48,7 +40,6 @@ return (
           className="full-width-image margin-top-0" 
           style={{
             backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
-            backgroundAttachment: `fixed`,
           }}>
           </div>
         }
@@ -61,7 +52,6 @@ return (
           className="full-width-image margin-top-0" 
           style={{
             backgroundImage: `url(${!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2})`,
-            backgroundAttachment: `fixed`,
           }}>
           </div>
         }
