@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import ContentBar from '../components/ContentBar'
+import Media from 'react-media'
 
 export const IndexPageTemplate = ({
   image,
@@ -18,57 +19,48 @@ export const IndexPageTemplate = ({
 }) => 
 {
 
-const imageURL = useWindowWidth() > 768 ? 
-(!!image.childImageSharp ? image.childImageSharp.fluid.src : image) :
-(!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2)
+// const imageURL = useWindowWidth() > 768 ? 
+// (!!image.childImageSharp ? image.childImageSharp.fluid.src : image) :
+// (!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2)
 
 return (
   <div>
     <div
-      className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${imageURL})`,
+        backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
         backgroundAttachment: `fixed`,
       }}
     >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        {/*<h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>*/}
-      </div>
     </div>
+
+    <div> {/* Handles React-Media Conditional SSR Rendering*/}
+      <Media
+        queries={{ medium: "(max-width: 768px)" }}
+        render={() => 
+          <div 
+          className="full-width-image margin-top-0" 
+          style={{
+            backgroundImage: `url(${!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2})`,
+            backgroundAttachment: `fixed`,
+          }}>
+          </div>
+        }
+      />
+
+      <Media
+        queries={{ medium: "(min-width: 768px)" }}
+        render={() => 
+          <div 
+          className="full-width-image margin-top-0" 
+          style={{
+            backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
+            backgroundAttachment: `fixed`,
+          }}>
+          </div>
+        }
+      />
+    </div>
+
     <section className="section section--gradient">
       
       <div className="container">
@@ -142,21 +134,6 @@ return (
   </div>
   
 )}
-
-const useWindowWidth = () => {
-  const [windowWidth, setWindowWidth ] = useState(window.innerWidth);
-
-  useEffect(() => {
-      const handleWindowResize = () => {
-          setWindowWidth(window.innerWidth);
-      };
-
-      window.addEventListener('resize', handleWindowResize);
-      return () => window.removeEventListener('resize', handleWindowResize);
-  },[]);
-
-  return windowWidth;
-}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
