@@ -26,7 +26,8 @@ export const IndexPageTemplate = ({
 // state = getDevice()
 // console.log(getDevice)
 let parser = new Parser()
-console.log(parser.getResult())
+let result = parser.getResult().device.type
+state = (result === 'mobile') ? 'mobile' : 'desktop'
 
 return (
   <div>
@@ -40,25 +41,26 @@ return (
 
     <div> {/* Handles React-Media Conditional SSR Rendering*/}
       <Media
-        query="(max-width: 768px)"
-        render={() => 
-          <div 
-          className="full-width-image margin-top-0" 
-          style={{
-            backgroundImage: `url(${!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2})`,
-            backgroundAttachment: `fixed`,
-          }}>
-          </div>
-        }
-      />
-
-      <Media
-        query="(min-width: 768px)"
+        queries={{ medium: "(min-width: 768px)" }}
+        defaultMatches={{ medium: state === 'desktop' }}
         render={() => 
           <div 
           className="full-width-image margin-top-0" 
           style={{
             backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
+            backgroundAttachment: `fixed`,
+          }}>
+          </div>
+        }
+      />
+      <Media
+        queries={{ medium: "(max-width: 768px)" }}
+        defaultMatches={{ medium: state === 'mobile' }}
+        render={() => 
+          <div 
+          className="full-width-image margin-top-0" 
+          style={{
+            backgroundImage: `url(${!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2})`,
             backgroundAttachment: `fixed`,
           }}>
           </div>
@@ -164,7 +166,7 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         index={true}
-        state={true}
+        state={'desktop'}
       />
     </Layout>
   )
