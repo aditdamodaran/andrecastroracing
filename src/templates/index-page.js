@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types'
 
 import Layout from '../components/Layout'
@@ -15,13 +15,15 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
-  index
+  index,
+  state
 }) => 
 {
-
 // const imageURL = useWindowWidth() > 768 ? 
 // (!!image.childImageSharp ? image.childImageSharp.fluid.src : image) :
 // (!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2)
+// state = getDevice()
+// console.log(getDevice)
 
 return (
   <div>
@@ -35,7 +37,7 @@ return (
 
     <div> {/* Handles React-Media Conditional SSR Rendering*/}
       <Media
-        queries={{ medium: "(max-width: 768px)" }}
+        query="(max-width: 768px)"
         render={() => 
           <div 
           className="full-width-image margin-top-0" 
@@ -48,7 +50,7 @@ return (
       />
 
       <Media
-        queries={{ medium: "(min-width: 768px)" }}
+        query="(min-width: 768px)"
         render={() => 
           <div 
           className="full-width-image margin-top-0" 
@@ -126,14 +128,10 @@ return (
       />
     </section>
 
-
-
-
-
-
   </div>
   
 )}
+
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -163,6 +161,7 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         index={true}
+        state={true}
       />
     </Layout>
   )
