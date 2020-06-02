@@ -26,11 +26,21 @@ export const IndexPageTemplate = ({
 // state = getDevice()
 // console.log(getDevice)
 let parser = new Parser()
-let result = parser.getResult().device.type
-state = (result === 'mobile') ? 'mobile' : 'desktop'
+let result = parser.getResult()
+const device = result.device.type
+const browser = result.browser.name
+const os = result.os.name
+state = (device === 'mobile') ? 'mobile' : 'desktop'
+state = (browser === 'Mobile Safari') ? 'mobile' : 'desktop'
+state = (
+  os === 'iOS' || 
+  os === 'Android'
+) ? 'mobile' : 'desktop'
+console.log(result)
 
 return (
   <div>
+
     <div> {/* Handles React-Media Conditional SSR Rendering*/}
       <Media
         queries={{ medium: "(min-width: 768px)" }}
@@ -40,6 +50,7 @@ return (
           className="full-width-image margin-top-0" 
           style={{
             backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
+            backgroundAttachment: `fixed`
           }}>
           </div>
         }
@@ -52,6 +63,7 @@ return (
           className="full-width-image margin-top-0" 
           style={{
             backgroundImage: `url(${!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2})`,
+            backgroundAttachment: `fixed`
           }}>
           </div>
         }
