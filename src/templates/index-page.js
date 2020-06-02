@@ -36,7 +36,6 @@ state = (
   os === 'iOS' || 
   os === 'Android'
 ) ? 'mobile' : 'desktop'
-console.log(result)
 
 return (
   <div>
@@ -49,8 +48,7 @@ return (
           <div 
           className="full-width-image margin-top-0" 
           style={{
-            backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
-            backgroundAttachment: `fixed`
+            backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`
           }}>
           </div>
         }
@@ -62,8 +60,7 @@ return (
           <div 
           className="full-width-image margin-top-0" 
           style={{
-            backgroundImage: `url(${!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2})`,
-            backgroundAttachment: `fixed`
+            backgroundImage: `url(${!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2})`
           }}>
           </div>
         }
