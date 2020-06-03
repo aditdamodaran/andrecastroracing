@@ -9,6 +9,8 @@ import logo from '../img/logo.svg'
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
+    // Touch (Hover Animation) Support for Mobile Devices
+    document.addEventListener("touchstart", function(){}, true);
     this.state = {
       active: false,
       navBarActiveClass: '',
