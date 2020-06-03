@@ -4,11 +4,20 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 class ContentBar extends React.Component {
   render() {
     const props = this.props
-    // console.log(props)
+    let bg = null
+    if (props.background){
+        bg = props.background.image
+        console.log(bg)
+    }
+    // console.log(background)
     return (
         <div className="content-bar"
         style={{
-            backgroundColor: props.color
+            backgroundColor: props.color,
+            backgroundImage: bg ? `url(${!!bg.childImageSharp ? bg.childImageSharp.fluid.src : bg})` : 'none',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+            height: bg ? props.height : 'auto'
         }}>
             <div className="title-container">
                 <h4 className="title">{props.text}</h4>
@@ -28,6 +37,6 @@ class ContentBar extends React.Component {
   }
 }
 
-export default ({text, color, images}) => (
- <ContentBar text={text} color={color} images={images}/>
+export default ({text, color, images, background, height}) => (
+ <ContentBar text={text} color={color} images={images} background={background} height={height}/>
 )

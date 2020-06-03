@@ -69,12 +69,12 @@ class BlogRoll extends React.Component {
           <div className="tile is-ancestor image-gallery">
             {/* Vertical LEFT Half */}
             <Link 
-              className="tile square" to={posts[2].fields.slug}
+              className="tile square" to={posts[3].fields.slug}
             >
               <BackgroundImage className="gallery-tile-inner"
-              fluid={posts[2].frontmatter.featuredimage.childImageSharp.fluid}>
+              fluid={posts[3].frontmatter.featuredimage.childImageSharp.fluid}>
                 <div className="overlay-title">
-                  <h2>{posts[2].frontmatter.title}</h2>
+                  <h2>{posts[3].frontmatter.title}</h2>
                   <p>Read more...</p>
                 </div>
                 <div className="overlay">
@@ -85,11 +85,11 @@ class BlogRoll extends React.Component {
             <div className="tile is-6 is-vertical">
 
 
-              <Link className="tile gallery-tile-half" to={posts[0].fields.slug}>
+              <Link className="tile gallery-tile-half" to={posts[4].fields.slug}>
                 <BackgroundImage className="gallery-tile-inner"
-                  fluid={posts[0].frontmatter.featuredimage.childImageSharp.fluid}>
+                  fluid={posts[4].frontmatter.featuredimage.childImageSharp.fluid}>
                   <div className="overlay-title">
-                    <h2>{posts[0].frontmatter.title}</h2>
+                    <h2>{posts[4].frontmatter.title}</h2>
                     <p>Read more...</p>
                   </div>
                   <div className="overlay">
@@ -97,11 +97,11 @@ class BlogRoll extends React.Component {
                 </BackgroundImage>
               </Link>
 
-              <Link className="tile gallery-tile-half" to={posts[1].fields.slug}>
+              <Link className="tile gallery-tile-half" to={posts[5].fields.slug}>
                 <BackgroundImage className="gallery-tile-inner"
-                fluid={posts[1].frontmatter.featuredimage.childImageSharp.fluid}>
+                fluid={posts[5].frontmatter.featuredimage.childImageSharp.fluid}>
                   <div className="overlay-title">
-                    <h2>{posts[1].frontmatter.title}</h2>
+                    <h2>{posts[5].frontmatter.title}</h2>
                     <p>Read more...</p>
                   </div>
                   <div className="overlay">

@@ -6,6 +6,7 @@ import BlogRoll from '../components/BlogRoll'
 import ContentBar from '../components/ContentBar'
 import Media from 'react-media'
 import Parser from 'ua-parser-js'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
 export const IndexPageTemplate = ({
   image,
@@ -60,7 +61,7 @@ return (
           <div 
           className="full-width-image margin-top-0" 
           style={{
-            backgroundImage: `url(${!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2})`
+            backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`
           }}>
           </div>
         }
@@ -85,11 +86,24 @@ return (
                   </div>
                 </div>*/}
 
-                <div className="columns">
-                  <div className="column is-12">
-                    {/*<h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>*/}
+                <div className="about columns">
+                  <div 
+                    className="about-image column is-5"
+                  >
+                    <div
+                      style={{
+                        width: 'auto',
+                        height: '100%',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center center',
+                        backgroundImage: `url(${!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2})`
+                      }}>
+                    >
+                    </div>
+                  </div>
+                  <div 
+                    className="about-text column is-7"
+                  >
                     <p>{description}</p>
                   </div>
                 </div>
@@ -113,6 +127,15 @@ return (
         </div>
       </div>
     </section>
+
+    {/*<section className="banner">
+      <ContentBar 
+        text={''} 
+        color={'white'}
+        background={intro.blurbs[3]}
+        height={'60vw'}
+      />
+    </section> */}
     
     <div className="blog-post-tiles">
       <BlogRoll index={index}/>     
