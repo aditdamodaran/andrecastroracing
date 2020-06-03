@@ -51,7 +51,7 @@ const Navbar = class extends React.Component {
             </Link>
             {/* Hamburger menu */}
             <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              className={`navbar-burger burger ${this.state.navBarActiveClass} no-mobile-hover`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
             >
