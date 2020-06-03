@@ -1,19 +1,23 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: Meet Andre
+image: /img/uchicago.jpg
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+Andre first jumped in a kart at the age of seven, beginning what was then a hobby competing in the local karting scene. He began to compete head to head against some of the best karting drivers in the nation at the age of thirteen, learning valuable lessons in race craft and discipline along the way.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Andre began his competitive car racing career in late 2015 during the Skip Barber Karts to Cars Shootout, earning a career advancement scholarship to compete the 2016 Skip Barber Championship Series. His performances in the Skip Barber championship attracted the attention of Jeremy Shaw, who invited him to participate in the Team USA Scholarship selection process - Andre advanced to the finalist stage of the competition, receiving coaching from Indy 500 champ Gil de Ferran and learning from IndyCar’s industry leaders along the way.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+After a brief stint in USF2000 which saw Andre achieve two top tens in two weekends, Andre returned to competition in Colombia's 2018 3 Hours of Bogota, achieving a class victory. He turned to NASCAR in 2019 after being selected for the Whelen Euro Series Drivers Recruitment Program. Thus far in 2019 he has achieved four podium finishes, one pole position, and two Rookie Trophy wins heading into the playoffs.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+<div style="display: grid justify-content: center">
+    <h1 style="text-align: center;">Fast Facts</h1>
+    <ul style="display: grid; justify-content: center">
+        <li>Birthdate: January 6, 1999</li>
+        <li>Hometown: New York, NY</li>
+        <li>Hobbies: Acting, Cycling, Sim Racing, Karting</li>
+        <li>Favorite Track: Road America</li>
+        <li>Games: iRacing, Rocket League, FIFA</li>
+    </ul>
+</div>
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.

@@ -5,9 +5,18 @@ class ContentBar extends React.Component {
   render() {
     const props = this.props
     let bg = null
+    let tp = null
+    let bgp = null
     if (props.background){
         bg = props.background.image
-        console.log(bg)
+    }
+    if (props.textposition){
+        tp = props.textposition
+        if (tp === 'center'){
+        }
+    }
+    if (props.backgroundposition){
+        bgp = props.backgroundposition
     }
     // console.log(background)
     return (
@@ -16,13 +25,18 @@ class ContentBar extends React.Component {
             backgroundColor: props.color,
             backgroundImage: bg ? `url(${!!bg.childImageSharp ? bg.childImageSharp.fluid.src : bg})` : 'none',
             backgroundSize: 'cover',
-            backgroundPosition: 'center center',
+            backgroundPosition: bgp,
+            backgroundRepeat: 'no-repeat',
             height: bg ? props.height : 'auto'
         }}>
             <div className="title-container">
-                <h4 className="title">{props.text}</h4>
+                <h4 className="title">
+                    {props.text}<br></br>
+                    <span>{props.subtitle ? props.subtitle : null}</span>
+                </h4>
+                
             </div>
-            <div className='images'>
+            {tp !== 'center' ? <div className='images'>
                 {props.images ? 
                     props.images.map((image, idx) =>
                     <PreviewCompatibleImage 
@@ -31,12 +45,30 @@ class ContentBar extends React.Component {
                         key={idx}
                     />
                 ) : null}
-            </div>
+            </div> : null}
         </div>
     )
   }
 }
 
-export default ({text, color, images, background, height}) => (
- <ContentBar text={text} color={color} images={images} background={background} height={height}/>
+export default ({
+    text, 
+    subtitle,
+    color, 
+    images, 
+    background, 
+    height, 
+    textposition, 
+    backgroundposition
+}) => (
+ <ContentBar 
+    text={text} 
+    subtitle={subtitle}
+    color={color} 
+    images={images} 
+    background={background} 
+    height={height} 
+    textposition={textposition}
+    backgroundposition={backgroundposition}
+  />
 )
