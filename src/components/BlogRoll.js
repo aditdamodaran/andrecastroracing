@@ -64,67 +64,8 @@ class BlogRoll extends React.Component {
               </BackgroundImage>
             </Link>
         </div>
-
-        {!this.props.index ? 
-          <div className="tile is-ancestor image-gallery">
-            {/* Vertical LEFT Half */}
-            <Link 
-              className="tile square" to={posts[3].fields.slug}
-            >
-              <BackgroundImage className="gallery-tile-inner"
-              fluid={posts[3].frontmatter.featuredimage.childImageSharp.fluid}>
-                <div className="overlay-title">
-                  <h2>{posts[3].frontmatter.title}</h2>
-                  <p>Read more...</p>
-                </div>
-                <div className="overlay">
-                </div>
-              </BackgroundImage>
-            </Link>
-            {/* Vertical RIGHT Half */}
-            <div className="tile is-6 is-vertical">
-
-
-              <Link className="tile gallery-tile-half" to={posts[4].fields.slug}>
-                <BackgroundImage className="gallery-tile-inner"
-                  fluid={posts[4].frontmatter.featuredimage.childImageSharp.fluid}>
-                  <div className="overlay-title">
-                    <h2>{posts[4].frontmatter.title}</h2>
-                    <p>Read more...</p>
-                  </div>
-                  <div className="overlay">
-                  </div>
-                </BackgroundImage>
-              </Link>
-
-              <Link className="tile gallery-tile-half" to={posts[5].fields.slug}>
-                <BackgroundImage className="gallery-tile-inner"
-                fluid={posts[5].frontmatter.featuredimage.childImageSharp.fluid}>
-                  <div className="overlay-title">
-                    <h2>{posts[5].frontmatter.title}</h2>
-                    <p>Read more...</p>
-                  </div>
-                  <div className="overlay">
-                  </div>
-                </BackgroundImage>
-              </Link>
-
-            </div>
-        </div>
-        : null}
-
-
-
-
-
-
       </div>
-
     )
-
-  
-    
-
   }
 }
 

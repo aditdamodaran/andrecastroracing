@@ -176,6 +176,17 @@ $menu-label-color: $white-ter
 // .blog-post-tiles
 //   margin: 0.5rem 0
 
+// NEWS
+.news-grid
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  column-gap: 3rem
+  grid-row-gap: 2rem
+  .title
+    font-family: "PN-Bold"
+  p
+    font-family: "PN-Regular"
+
 .square
   height: 50vw
 
@@ -282,6 +293,9 @@ $menu-label-color: $white-ter
   .footer-signature
     padding: 3em 2em
   
+  .news-grid
+    grid-template-columns: 1fr
+  
 
 +mobile
   .full-width-image
@@ -346,6 +360,9 @@ $menu-label-color: $white-ter
 
     .content-bar
       height: 60vw
+ 
+  .news-grid
+    grid-template-columns: 1fr
 
 
 // OVERRIDES
