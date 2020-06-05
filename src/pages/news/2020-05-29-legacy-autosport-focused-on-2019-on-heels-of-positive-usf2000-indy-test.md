@@ -9,8 +9,6 @@ featuredimage: /img/testingwithlaatindy.jpg
 tags:
   - News
 ---
-![Andre Castro with Legacy Autosports in Indianapolis](/img/testingwithlaatindy.jpg "Andre Castro with Legacy Autosports in Indianapolis")
-
 INDIANAPOLIS, IN (October 4, 2018) – Just weeks following their official introduction as a new team in the Road to Indy program, Legacy Autosport is now completely focused on the 2019 season having completed an extremely successful weekend at the Chris Griffis Memorial Test on the Indianapolis Motor Speedway road course on September 22-23. The team, led by owner and veteran crew chief Mike Meyer, fielded a pair of Tatuus USF-17s for Frenchman Alex Baron and American Andre Castro and the end results were nothing but positive. With a concentration on collecting data and developing their set-up book, the Legacy crew ran through their plan perfectly as Baron and Castro both performed brilliantly, spending the weekend in the top-half of the order for a majority of the test. Baron was on his game, putting his Legacy Autosport entry in the top-three of the overall time sheets, while Castro was impressive in his return to the seat after an extended absence.  With their first outing in the books, the team is motivated to continue their progress with an aggressive off-season testing schedule with a focus on running two cars full-time in 2019.
 
 “I am very proud of the entire team, as we had a set testing plan and marked off everything we wanted to collect data on,” enthused Meyer, the team owner of Legacy Autosport. “To have both cars in the top-six with Andre in the top-five for most of the test and Alex as one of only three drivers in the 1-minute 24-second range right out of the box, I couldn’t be more excited.”
