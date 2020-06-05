@@ -55,7 +55,9 @@ export const BlogPostTemplate = ({
               <h6 className="is-size-6">{description}</h6>
             </div> : null}
             <br></br>
-            <PostContent content={content} />
+            <div className="blog-content">
+              <PostContent content={content} />
+            </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
