@@ -8,6 +8,7 @@ description: We kick this episode off in Midtown to meet Andre Castro, a young
   has been his lifelong dream, and this season, Andre is one of the few Latinos
   eligible to win a spot in the IndyCar Series.
 featuredpost: true
+displayfeaturedimage: false
 featuredimage: /img/thumbnailnuevayork.jpg
 tags:
   - News

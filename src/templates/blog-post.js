@@ -88,6 +88,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        displayfeaturedimage={post.frontmatter.displayfeaturedimage}
         featuredimage={post.frontmatter.featuredimage}
       />
     </Layout>
@@ -111,6 +112,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        displayfeaturedimage
         featuredimage {
           childImageSharp {
             fluid(maxWidth: 1000, quality: 100) {
