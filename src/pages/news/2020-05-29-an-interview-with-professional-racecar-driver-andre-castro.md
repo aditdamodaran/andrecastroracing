@@ -14,6 +14,7 @@ description: "Over the past three months, I have been honored to work with Andre
   business economics. He is working on getting sponsors so that he can race more
   on the track. Below are his responses to some of the questions I had for him:"
 featuredpost: true
+displayfeaturedimage: true
 featuredimage: /img/shot1.jpg
 tags:
   - News

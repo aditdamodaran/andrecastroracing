@@ -7,6 +7,7 @@ description: The first part of the 2019 season has been a roller coaster for
   American Speedfest looking for consistency in their quest for the ELITE 2
   Division title.
 featuredpost: true
+displayfeaturedimage: true
 featuredimage: /img/italy.jpg
 tags:
   - News

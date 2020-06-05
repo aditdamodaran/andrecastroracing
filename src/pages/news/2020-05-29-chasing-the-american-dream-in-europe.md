@@ -5,6 +5,7 @@ date: 2019-05-30T18:33:00.000Z
 description: Learn all about the newest rising NASCAR star, Andre Castro as he
   takes his talents to Europe to begin a new chapter in his journey.
 featuredpost: true
+displayfeaturedimage: true
 featuredimage: /img/backgroundnascar.jpg
 tags:
   - News

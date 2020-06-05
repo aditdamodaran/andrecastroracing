@@ -14,6 +14,7 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  displayfeaturedimage,
   featuredimage,
   helmet,
 }) => {
@@ -33,12 +34,14 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <PreviewCompatibleImage 
-              imageInfo={{
-                image: featuredimage,
-                alt: `featured image thumbnail for post ${title}`,
-              }}
-            />
+            {displayfeaturedimage ? 
+              <PreviewCompatibleImage 
+                imageInfo={{
+                  image: featuredimage,
+                  alt: `featured image thumbnail for post ${title}`,
+                }}
+              /> 
+              : null }
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (

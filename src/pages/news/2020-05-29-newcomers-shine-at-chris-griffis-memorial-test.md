@@ -14,6 +14,7 @@ description: Matthew Brabham, the 2012 USF2000 champion who made his
   Leitch at Newman Wachs Racing, which is making its return to the sport
   following a seven-year hiatus.
 featuredpost: true
+displayfeaturedimage: true
 featuredimage: /img/pits-1.jpg
 tags:
   - News

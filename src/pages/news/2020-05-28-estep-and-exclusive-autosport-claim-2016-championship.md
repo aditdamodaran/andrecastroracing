@@ -4,6 +4,7 @@ title: Estep and Exclusive Autosport Claim 2016 Championship
 date: 2016-11-26T21:15:00.000Z
 description: "\n"
 featuredpost: true
+displayfeaturedimage: true
 featuredimage: /img/formulatour1600.jpg
 tags:
   - News

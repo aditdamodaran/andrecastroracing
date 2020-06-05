@@ -4,6 +4,7 @@ title: Team USA Scholarship Finalists Announced
 date: 2016-11-25T21:03:00.000Z
 description: " "
 featuredpost: true
+displayfeaturedimage: true
 featuredimage: /img/teamusarecipients.jpg
 tags:
   - News
