@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { VideoPageTemplate } from '../../templates/videos-page'
+import { AboutPageTemplate } from '../../templates/about-page'
 
-const VideoPagePreview = ({ entry, widgetFor }) => (
-  <VideoPageTemplate
+const AboutPagePreview = ({ entry, widgetFor }) => (
+  <AboutPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />
 )
 
-VideoPagePreview.propTypes = {
+AboutPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 }
 
-export default VideoPagePreview
+export default AboutPagePreview

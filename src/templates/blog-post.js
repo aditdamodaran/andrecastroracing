@@ -27,6 +27,7 @@ export const BlogPostTemplate = ({
           color={'white'}
           textposition={'center'}
           backgroundposition={'center center'}
+          padding={'0rem 5%'}
       />
       <div className="container content">
         <div className="columns">

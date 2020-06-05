@@ -7,6 +7,7 @@ class ContentBar extends React.Component {
     let bg = null
     let tp = null
     let bgp = null
+    let pad = null
     if (props.background){
         bg = props.background.image
     }
@@ -18,6 +19,9 @@ class ContentBar extends React.Component {
     if (props.backgroundposition){
         bgp = props.backgroundposition
     }
+    if (props.padding){
+        pad = props.padding
+    }
     // console.log(background)
     return (
         <div className="content-bar"
@@ -27,7 +31,8 @@ class ContentBar extends React.Component {
             backgroundSize: 'cover',
             backgroundPosition: bgp,
             backgroundRepeat: 'no-repeat',
-            height: bg ? props.height : 'auto'
+            height: bg ? props.height : 'auto',
+            padding: pad ? props.padding : '3% 5% 2% 5%'
         }}>
             <div className="title-container">
                 <h4 className="title">
@@ -59,7 +64,8 @@ export default ({
     background, 
     height, 
     textposition, 
-    backgroundposition
+    backgroundposition,
+    padding
 }) => (
  <ContentBar 
     text={text} 
@@ -70,5 +76,6 @@ export default ({
     height={height} 
     textposition={textposition}
     backgroundposition={backgroundposition}
+    padding={padding}
   />
 )

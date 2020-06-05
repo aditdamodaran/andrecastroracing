@@ -12,12 +12,13 @@ export default class BlogIndexPage extends React.Component {
           color={'white'}
           textposition={'center'}
           backgroundposition={'center center'}
+          padding={'1% 5%'}
         />
           <h1
             className="has-text-weight-bold is-size-1"
             style={{
-              backgroundColor: '#d24b4d',
-              color: 'white',
+              backgroundColor: 'white',
+              color: '#d24b4d',
               textAlign: 'center'
             }}
           >
