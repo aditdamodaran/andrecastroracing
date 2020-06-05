@@ -20,10 +20,6 @@ tags:
 ---
 
 
-<br>
-
-![Andre at UChicago](/img/shot1.jpg "Andre at UChicago")
-
 **<br>**
 
 **How did you get into go-karts when you were young?**
@@ -45,7 +41,5 @@ I’d say it would have to be qualifying for the Team USA Scholarship and then r
 **Aside from racing, what do you plan to do after graduating from UChicago?**
 
 That’s a tough one. I’m still finding myself academically, but the area of business economics really interests me as it is essential to understanding how the business of motorsport works. My first goal is to graduate, and after that possibly begin my own racing team or be involved with an established, professional one. But I honestly have no clue what I want to do besides drive! We’ll see in a year or two.
-
-
 
 Originally published at: <br>*<https://www.isportsweb.com/2018/07/15/an-interview-with-professional-racecar-driver-andre-castro/>*
