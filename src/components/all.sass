@@ -195,6 +195,19 @@ $menu-label-color: $white-ter
 .gatsby-height-adjust
   height: 15vw
 
+// Blog Post
+.blog-container
+  padding: 0rem 5rem
+  width: 75%
+  margin-left: auto
+  margin-right: auto
+
+.blog-image-wrapper
+  padding: 0rem 5rem 2rem 5rem
+  .blog-image
+    padding: 0rem 5rem
+
+// Gallery Blog
 .square
   height: 50vw
 
@@ -271,7 +284,7 @@ $menu-label-color: $white-ter
     display: inline
 
 // VIDEOS
-@media screen and (max-width: 800px)
+@media screen and (max-width: 1025px)
   .vimeo-wrapper
     display: none
 
@@ -294,6 +307,20 @@ $menu-label-color: $white-ter
 .other-videos-wrapper
   text-align: center
   padding: 3rem 1rem
+
+.other-video
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 25px
+  height: 0
+  margin-top: 2rem
+
+.other-video iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
 
 
 
@@ -330,6 +357,16 @@ $menu-label-color: $white-ter
   
   .gatsby-height-adjust
     height: 20vw
+  
+  // Blog Post
+  .blog-container
+    padding: 0rem 0rem
+    width: 90%
+
+  .blog-image-wrapper
+    // padding: 0rem 5rem 2rem 5rem
+    .blog-image
+      // padding: 0rem 5rem
   
 
 +mobile
@@ -402,6 +439,18 @@ $menu-label-color: $white-ter
   
   .gatsby-height-adjust
     height: 50vw
+  
+  .other-videos-wrapper
+    padding: 0rem 0rem
+  
+  .blog-container
+    padding: 0rem 0rem
+    width: 90%
+  
+  .blog-image-wrapper
+    padding: 0rem 0rem
+    .blog-image
+      padding: 0rem 0rem
 
 
 // OVERRIDES

@@ -19,10 +19,6 @@ featuredimage: /img/shot1.jpg
 tags:
   - News
 ---
-
-
-**<br>**
-
 **How did you get into go-karts when you were young?**
 
 I first started watching racing on my TV when I was six, to the point where I’d be keeping up on news online and watching every weekend. My dad noticed and, not knowing anything about racing, enrolled me in a karting class for young kids at a local track. I won my first race and it just began to escalate from there.

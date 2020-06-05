@@ -30,20 +30,31 @@ export const BlogPostTemplate = ({
           padding={'0rem 5%'}
       />
       <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
+        <div className="">
+          <div className="blog-container">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            {displayfeaturedimage ? 
-              <PreviewCompatibleImage 
-                imageInfo={{
-                  image: featuredimage,
-                  alt: `featured image thumbnail for post ${title}`,
-                }}
-              /> 
-              : null }
-            <p>{description}</p>
+            <div className="blog-image-wrapper">
+              {displayfeaturedimage ? 
+                <PreviewCompatibleImage 
+                  imageInfo={{
+                    image: featuredimage,
+                    alt: `featured image thumbnail for post ${title}`,
+                  }}
+                  responsiveHeight='blog-image'
+                /> 
+                : null }
+            </div>
+            {description.replace(/\s/g, '').length ? <div 
+              className="blog-description" 
+              style={{
+                backgroundColor: '#eee',
+                padding: '0.5rem 1rem'
+            }}>
+              <h6 className="is-size-6">{description}</h6>
+            </div> : null}
+            <br></br>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>

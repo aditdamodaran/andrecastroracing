@@ -7,7 +7,6 @@ import FullWidthVideo from '../components/FullWidthVideo'
 
 export const VideoPageTemplate = ({ title, videos, content, contentComponent }) => {
   const PageContent = contentComponent || Content
-  console.log(videos)
 
   return (
     <div>
@@ -26,12 +25,15 @@ export const VideoPageTemplate = ({ title, videos, content, contentComponent }) 
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                   {title}
                 </h2>
-                  {videos ? videos.map((url)=>
-                    <iframe src={url} 
-                      frameborder="0" 
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                      allowfullscreen>
-                    </iframe>
+                  {videos ? videos.map((url, idx)=>
+                    <div className="other-video" key={idx}>
+                      <iframe src={url+"?&rel=0"} 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen>
+                      </iframe>
+                      <br></br>
+                    </div>
                   ) : null }
                   <PageContent className="content" content={content} />
                 </div>

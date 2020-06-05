@@ -24,4 +24,4 @@ Exactly as he did in Valencia after a last-lap crash denied him a win in his fir
 
 Castro and Venturi, who at Brands Hatch got his maiden NWES win in 2018, will enter the June 1-2 NASCAR GP UK sitting respectively 8th and 25th in points and with the clear goal to go to Victory Lane.
 
-Original Article: <https://www.euronascar.com/2019/05/23/a-roller-coaster-start-of-the-season-for-venturi-and-castro/?fbclid=IwAR0-v5oTbIxBUq3vy9mmURLeRPvPJM_GTq7FFSvoQTefenKrbKpXjz4r_3g>
+Original Article: <br><https://www.euronascar.com/2019/05/23/a-roller-coaster-start-of-the-season-for-venturi-and-castro/?fbclid=IwAR0-v5oTbIxBUq3vy9mmURLeRPvPJM_GTq7FFSvoQTefenKrbKpXjz4r_3g>

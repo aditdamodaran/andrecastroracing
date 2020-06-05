@@ -23,6 +23,5 @@ The following drivers will be making their way to South Florida for the shootout
 
 The Lucas Oil School of Racing – America’s newest racing school – features Ray GR11 open-wheel cars with 2.0-liter Elite Engines power plants and Cooper tires, as well as a comprehensive AiM Sportline Formula Steering Wheel 2 data and SmartyCam video systems to provide students with all the tools they will need to pursue a career in the sport.
 
-Originally Published at:
-
+Originally Published at: <br>
 http://www.rrdc.org/2016/09/09/team-usa-scholarship-finalists-set/
