@@ -1,24 +1,29 @@
 import React from 'react'
 
 class FullWidthVideo extends React.Component {
+    constructor(props){
+        super(props)
+    }
+
     render(){
+        const props = this.props
         return(
             <div className="video">
-            <div class="vimeo-wrapper">
-                <iframe src="https://player.vimeo.com/video/240858420?background=1&autoplay=1&loop=1&byline=0&title=0"
-                        frameborder="0" 
-                        webkitallowfullscreen 
-                        mozallowfullscreen 
-                        allowfullscreen
+              <div className="vimeo-wrapper">
+                <iframe src={props.url + '?background=1&autoplay=1&loop=1&muted=1'}
+                    allow="autoplay; fullscreen"
+                    frameBorder="0" 
+                    allowFullScreen
                 >
                 </iframe>
-            </div>
+              </div>
             </div>
         )
     }
 }
 
-export default ({ }) => (
+export default ({url}) => (
  <FullWidthVideo 
+    url={url}
   />
 )

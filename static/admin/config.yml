@@ -57,4 +57,5 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Video Links", name: "videos", widget: "list"}
           - {label: "Body", name: "body", widget: "markdown"}

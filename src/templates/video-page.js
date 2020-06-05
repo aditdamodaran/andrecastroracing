@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import FullWidthVideo from '../components/FullWidthVideo'
 
-export const VideoPageTemplate = ({ title, image, content, contentComponent }) => {
+export const VideoPageTemplate = ({ title, videos, content, contentComponent }) => {
   const PageContent = contentComponent || Content
-  console.log(image)
+  console.log(videos)
 
   return (
     <div>
@@ -18,10 +19,22 @@ export const VideoPageTemplate = ({ title, image, content, contentComponent }) =
             <div className="column is-10 is-offset-1">
 
               <div className="section">
+                <FullWidthVideo
+                  url={'https://player.vimeo.com/video/426112668'}
+                />
+                <div className="other-videos-wrapper">
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                   {title}
                 </h2>
-                <PageContent className="content" content={content} />
+                  {videos ? videos.map((url)=>
+                    <iframe src={url} 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen>
+                    </iframe>
+                  ) : null }
+                  <PageContent className="content" content={content} />
+                </div>
               </div>
             </div>
           </div>
@@ -39,6 +52,7 @@ VideoPageTemplate.propTypes = {
 
 const VideoPage = ({ data }) => {
   const { markdownRemark: post } = data
+  // console.log(data)
 
   return (
     <Layout>
@@ -46,7 +60,7 @@ const VideoPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-        image={post.frontmatter}
+        videos={post.frontmatter.videos}
       />
     </Layout>
   )
@@ -64,13 +78,7 @@ export const videoPageQuery = graphql`
       html
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        videos
       }
     }
   }
