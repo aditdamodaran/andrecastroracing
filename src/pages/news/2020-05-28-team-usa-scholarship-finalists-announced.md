@@ -14,16 +14,11 @@ The finalists have been chosen from 11 candidates who attended the recent Verizo
 
 “All of the candidates found the experience enlightening,” said Team USA founder and auto racing writer/broadcaster Jeremy Shaw. “They learned a great deal about the inner workings of the sport and were able to meet a selection of influential figures who can help them as they work their way up the ladder. At the same time it was an opportunity for us to learn more about the youngsters. The standard was high; deciding who would make the cut was extremely difficult.”
 
-The following drivers will be making their way to South Florida for the shootout: •    Oliver Askew, 19, Jupiter, Fla.
-•    Andre Castro, 17, New York, N.Y.
+The following drivers will be making their way to South Florida for the shootout: •    Oliver Askew, 19, Jupiter, Fla. •    Andre Castro, 17, New York, N.Y.
 •    Konrad Czaczyk, 19, Jupiter, Fla.
 •    Tim de Silva, 20, Rancho Palos Verdes, Calif.
 •    Kyle Kirkwood, 17, Jupiter, Fla.
 •    Robert Megennis, 16, New York, N.Y.
-
-
-
-![Team USA Scholarship Recipients](/img/teamusarecipients.jpg "Team USA Scholarship Recipients")
 
 The Lucas Oil School of Racing – America’s newest racing school – features Ray GR11 open-wheel cars with 2.0-liter Elite Engines power plants and Cooper tires, as well as a comprehensive AiM Sportline Formula Steering Wheel 2 data and SmartyCam video systems to provide students with all the tools they will need to pursue a career in the sport.
 
