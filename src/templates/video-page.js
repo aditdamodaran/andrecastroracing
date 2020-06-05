@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import ContentBar from '../components/ContentBar'
 
 export const VideoPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -12,13 +11,6 @@ export const VideoPageTemplate = ({ title, image, content, contentComponent }) =
   return (
     <div>
       <section className="section section--gradient about-page">
-      <ContentBar 
-        text={title}
-        color={'white'}
-        background={image}
-        textposition={'center'}
-        backgroundposition={'center center'}
-      />
         <div className="container about-page-content">
           <div 
             className="columns"
@@ -27,7 +19,7 @@ export const VideoPageTemplate = ({ title, image, content, contentComponent }) =
 
               <div className="section">
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  {/*title*/}
+                  {title}
                 </h2>
                 <PageContent className="content" content={content} />
               </div>

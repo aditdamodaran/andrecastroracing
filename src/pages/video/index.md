@@ -1,6 +1,6 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: 'video-page'
+path: /video
 title: VIDEOS
 image: /img/uchicago.jpg
 ---
