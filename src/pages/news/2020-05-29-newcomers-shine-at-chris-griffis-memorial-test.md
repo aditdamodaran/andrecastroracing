@@ -20,6 +20,4 @@ tags:
 ---
 
 
-![Road to Indy Car 36 for Newman Wachs Racing Pits](/img/pits-1.jpg "Pitstop")
-
 Originally Published at: <br>*<https://www.promazda.com/news/newcomers-shine-at-chris-griffis-memorial-test>*
