@@ -20,7 +20,7 @@ class News extends React.Component {
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
-                        heightSet={'15vw'}
+                        responsiveHeight={'gatsby-height-adjust'}
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
@@ -31,13 +31,13 @@ class News extends React.Component {
                   <br></br>
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="title has-text-primary"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
                     </Link>
                     <br></br>
-                    <span className="subtitle is-size-5 is-block">
+                    <span className="subtitle is-size-6 is-block">
                       {post.frontmatter.date}
                     </span>
                   </p>

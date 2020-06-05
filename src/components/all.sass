@@ -183,9 +183,17 @@ $menu-label-color: $white-ter
   column-gap: 3rem
   grid-row-gap: 2rem
   .title
-    font-family: "PN-Bold"
+    font-family: "PN-Light"
+    font-size: 1.3em
+    text-transform: uppercase
   p
-    font-family: "PN-Regular"
+    font-family: "PN-Light"
+  
+  .subtitle
+    // font-size: 0.75em
+
+.gatsby-height-adjust
+  height: 15vw
 
 .square
   height: 50vw
@@ -294,7 +302,11 @@ $menu-label-color: $white-ter
     padding: 3em 2em
   
   .news-grid
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr 1fr
+    padding: 0rem 1rem
+  
+  .gatsby-height-adjust
+    height: 20vw
   
 
 +mobile
@@ -363,6 +375,10 @@ $menu-label-color: $white-ter
  
   .news-grid
     grid-template-columns: 1fr
+    padding: 2rem 2rem
+  
+  .gatsby-height-adjust
+    height: 50vw
 
 
 // OVERRIDES

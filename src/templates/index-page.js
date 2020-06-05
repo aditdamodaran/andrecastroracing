@@ -6,7 +6,6 @@ import BlogRoll from '../components/BlogRoll'
 import ContentBar from '../components/ContentBar'
 import Media from 'react-media'
 import Parser from 'ua-parser-js'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
 export const IndexPageTemplate = ({
   image,
