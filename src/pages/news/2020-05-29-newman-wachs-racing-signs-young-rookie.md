@@ -10,8 +10,6 @@ featuredimage: /img/motioncover.jpg
 tags:
   - News
 ---
-![Newman Wachs Car Testing at Indianapolis with Motion Blur](/img/motioncover.jpg "Newman Wachs Car Testing at Indianapolis")
-
 “I am very happy to say that we have locked down our second driver today,” said Team Manager Brian Halahan. “We ran Andre in our first test at Indy last October, and we had some success with him right from the start. He was fast and he worked well with the team, so I feel we can build on that and have him running strong as soon as he is back in the Newman Wachs car. I think Andre and Dakota will make good teammates and push each other to the front.”
 
 Castro, who turned 18 just a few weeks ago, was born in New York City, but his origins are Colombian. He speaks both English and Spanish, as his parents are immigrants from Colombia. He attends Stuyvesant High School, a school for gifted students.
