@@ -18,7 +18,6 @@ export const IndexPageTemplate = ({
   state
 }) => 
 {
-console.log(image2)
 
 return (
   <div>
