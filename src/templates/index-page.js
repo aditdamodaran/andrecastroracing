@@ -5,7 +5,6 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import ContentBar from '../components/ContentBar'
 import Media from 'react-media'
-import Parser from 'ua-parser-js'
 
 export const IndexPageTemplate = ({
   image,
@@ -20,40 +19,18 @@ export const IndexPageTemplate = ({
   state
 }) => 
 {
-// const imageURL = useWindowWidth() > 768 ? 
-// (!!image.childImageSharp ? image.childImageSharp.fluid.src : image) :
-// (!!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2)
-// state = getDevice()
-// console.log(getDevice)
-let parser = new Parser()
-let result = parser.getResult()
-const device = result.device.type
-const browser = result.browser.name
-const os = result.os.name
-state = (device === 'mobile') ? 'mobile' : 'desktop'
-state = (browser === 'Mobile Safari') ? 'mobile' : 'desktop'
-state = (
-  os === 'iOS' || 
-  os === 'Android'
-) ? 'mobile' : 'desktop'
 
 return (
   <div>
 
     <div> {/* Handles React-Media Conditional SSR Rendering*/}
-      <Media
-        queries={{ medium: "(min-width: 768px)" }}
-        defaultMatches={{ medium: state === 'desktop' }}
-        render={() => 
-          <div 
-          className="full-width-image margin-top-0" 
-          style={{
-            backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`
-          }}>
-          </div>
-        }
-      />
-      <Media
+      <div 
+      className="full-width-image margin-top-0" 
+      style={{
+        backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`
+      }}>
+      </div>
+      {/*<Media
         queries={{ medium: "(max-width: 768px)" }}
         defaultMatches={{ medium: state === 'mobile' }}
         render={() => 
@@ -64,7 +41,7 @@ return (
           }}>
           </div>
         }
-      />
+      />*/}
     </div>
 
     <section className="section section--gradient">

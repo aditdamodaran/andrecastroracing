@@ -10,5 +10,4 @@ intro:
     - image: /img/pkcarsport.png
     - image: /img/powerkitshopwhite.png
     - image: /img/teamusascholarshipclear.png
-    - image: /img/uchicago.jpg
 ---

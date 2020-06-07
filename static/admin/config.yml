@@ -38,6 +38,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
+          - {label: Bio Image, name: image2, widget: image}
           - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, 
               fields: [
