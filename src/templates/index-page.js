@@ -146,9 +146,9 @@ return (
         color={'black'}
         images={
           [
-            intro.blurbs[0],
-            intro.blurbs[1],
-            intro.blurbs[2]
+            intro.partners[0],
+            intro.partners[1],
+            intro.partners[2]
           ]
         }
       />
@@ -222,15 +222,9 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
         description
         intro {
-          blurbs {
+          partners {
             image {
               childImageSharp {
                 fluid(maxWidth: 2048, quality: 100) {
@@ -238,10 +232,7 @@ export const pageQuery = graphql`
                 }
               }
             }
-            text
           }
-          heading
-          description
         }
       }
     }
