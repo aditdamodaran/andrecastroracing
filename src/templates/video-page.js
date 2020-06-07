@@ -28,6 +28,7 @@ export const VideoPageTemplate = ({ title, videos, content, contentComponent }) 
                   {videos ? videos.map((url, idx)=>
                     <div className="other-video" key={idx}>
                       <iframe src={url+"?&rel=0"} 
+                        title={idx}
                         frameBorder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowFullScreen>
