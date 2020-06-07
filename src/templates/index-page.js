@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import ContentBar from '../components/ContentBar'
-import Media from 'react-media'
 
 export const IndexPageTemplate = ({
   image,
@@ -30,18 +29,6 @@ return (
         backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`
       }}>
       </div>
-      {/*<Media
-        queries={{ medium: "(max-width: 768px)" }}
-        defaultMatches={{ medium: state === 'mobile' }}
-        render={() => 
-          <div 
-          className="full-width-image margin-top-0" 
-          style={{
-            backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`
-          }}>
-          </div>
-        }
-      />*/}
     </div>
 
     <section className="section section--gradient">
