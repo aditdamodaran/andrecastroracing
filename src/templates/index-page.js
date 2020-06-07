@@ -18,6 +18,7 @@ export const IndexPageTemplate = ({
   state
 }) => 
 {
+console.log(image2)
 
 return (
   <div>
@@ -39,15 +40,6 @@ return (
             <div className="column is-10 is-offset-1">
               <div className="content">
                 
-              
-                {/*<div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>*/}
 
                 <div className="about columns">
                   <div 
