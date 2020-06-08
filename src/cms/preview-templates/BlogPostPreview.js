@@ -6,8 +6,6 @@ const BlogPostPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(['data', 'tags'])
   console.log(entry, widgetFor)
   return (
-    <div>
-    Hello
     <BlogPostTemplate
       content={widgetFor('body')}
       description={entry.getIn(['data', 'description'])}
@@ -15,7 +13,6 @@ const BlogPostPreview = ({ entry, widgetFor }) => {
       title={entry.getIn(['data', 'title'])}
       displayfeaturedimage={entry.getIn(['data','displayfeaturedimage'])}
     />
-    </div>
   )
 }
 

@@ -3,6 +3,7 @@ import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import ContentBar from '../../components/ContentBar'
 
 const TagsPage = ({
   data: {
@@ -13,7 +14,13 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <section className="section">
+    <ContentBar 
+      color={'white'}
+      textposition={'center'}
+    />
+    <section 
+      className="section"
+      style={{minHeight: '100vw'}}>
       <Helmet title={`Tags | ${title}`} />
       <div className="container content">
         <div className="columns">
