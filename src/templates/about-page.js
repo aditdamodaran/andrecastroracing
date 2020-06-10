@@ -18,6 +18,7 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
         background={image}
         textposition={'center'}
         backgroundposition={'center center'}
+        textCenterOnBg={true}
       />
         <div className="container about-page-content">
           <div 
