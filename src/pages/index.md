@@ -22,4 +22,5 @@ intro:
   partners:
     - image: /img/grapos.png
     - image: /img/df1.png
+    - image: /img/la.png
 ---
