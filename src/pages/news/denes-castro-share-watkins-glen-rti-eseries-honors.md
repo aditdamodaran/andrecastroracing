@@ -11,7 +11,7 @@ description: Californian Phillippe Denes solidified his lead in the TireRack.com
   Autosport.
 featuredpost: true
 displayfeaturedimage: true
-featuredimage: /img/rti-s2r4-race-2-green-flag-for-race-2-002-1.jpg
+featuredimage: /img/99299481_3064239353634378_3554764454589628416_o.jpg
 tags:
   - iRacing
   - Esports
