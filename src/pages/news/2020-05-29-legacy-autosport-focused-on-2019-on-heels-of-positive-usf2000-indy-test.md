@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Legacy Autosport on Heels of Positive USF2000 Indy Test
-date: 2019-05-29T18:27:00.000Z
+date: 2018-10-04T18:27:00.000Z
 description: "Legacy Autosport fielded USF2000 cars for Alex Baron and Andre
   Castro at the recent Chris Griffis Memorial Test on the IMS road course "
 featuredpost: true
@@ -37,3 +37,7 @@ Facebook, Twitter, Instagram - @LegacyAutosport
 **About Legacy Autosport:**
 
 Legacy Autosport is a race team run by the Meyer family, whose grandfather and great grandfather was Louis Meyer, the first three-time champion of the Indianapolis 500. In 2018, the legacy perseveres, with the younger Mike Meyer, who continues the winning ways of the family.  Legacy Autosport is focused on driver development with a goal of helping drivers become successful in the Road to Indy and beyond. Legacy Autosport is based in Lebanon, Indiana, just outside of Indianapolis and the Indianapolis Motor Speedway. They are in the heart of the Motor Racing Capital of the World. Louis “Mike” Meyer has a season of experience in USF2000 in the Mazda Road to Indy Presented by Cooper Tires as a winning crew chief for Alex Baron, including the Indianapolis Grand Prix at the Indianapolis Motor Speedway. Mike, the Owner/Team Manager/Crew Chief, has spent the previous 13 years in Indy Lights, winning five championships, countless race wins, pole positions and four Freedom 100 wins at Indianapolis Motor Speedway. Louis “Butch” Meyer brings a story book career in automobile racing which includes building IndyCar motors with several manufactures and teams, five years as technical director of the Indy Lights program and ownership of an Indy Lights team.
+
+
+
+Original article: <https://www.usf2000.com/news/legacy-autosport-focused-on-2019-on-heels-of-positive-indy-test>
