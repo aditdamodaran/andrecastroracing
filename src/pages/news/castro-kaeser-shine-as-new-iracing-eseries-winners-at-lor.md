@@ -12,7 +12,7 @@ description: A virtual rendition of the tight 0.686-mile Lucas Oil Raceway oval
   men it was their first trip to the top step of the podium.
 featuredpost: true
 displayfeaturedimage: true
-featuredimage: /img/rti-s2-round-3-race-2-flinn-lazier-makes-a-last-lap-pass-attempt-on-leader-max-kaeser.jpg
+featuredimage: /img/99291041_292288755497923_4514399060643282944_n.jpg
 tags:
   - Andre Castro Racing
   - Esports
