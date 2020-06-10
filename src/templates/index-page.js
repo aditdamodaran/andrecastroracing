@@ -99,13 +99,7 @@ return (
       <ContentBar 
         text={'Partners'} 
         color={'black'}
-        images={
-          [
-            intro.partners[0],
-            intro.partners[1],
-            intro.partners[2]
-          ]
-        }
+        images =  {intro.partners.map((partner) => (partner))}
       />
     </section>
 
