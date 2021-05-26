@@ -1,5 +1,5 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: Meet Andre
 image: /img/uchicago.jpg
@@ -8,7 +8,7 @@ Andre first jumped in a kart at the age of seven, beginning what was then a hobb
 
 Andre began his competitive car racing career in late 2015 during the Skip Barber Karts to Cars Shootout, earning a career advancement scholarship to compete the 2016 Skip Barber Championship Series. His performances in the Skip Barber championship attracted the attention of Jeremy Shaw, who invited him to participate in the Team USA Scholarship selection process - Andre advanced to the finalist stage of the competition, receiving coaching from Indy 500 champ Gil de Ferran and learning from IndyCar’s industry leaders along the way.
 
-After a brief stint in USF2000 which saw Andre achieve two top tens in two weekends, Andre returned to competition in Colombia's 2018 3 Hours of Bogota, achieving a class victory. He turned to NASCAR in 2019 after being selected for the Whelen Euro Series Drivers Recruitment Program. Thus far in 2019 he has achieved four podium finishes, one pole position, and two Rookie Trophy wins heading into the playoffs.
+After a brief stint in USF2000 which saw Andre achieve two top tens in two weekends, Andre returned to competition in Colombia's 2018 3 Hours of Bogota, achieving a class victory. He turned to NASCAR in 2019 after being selected for the Whelen Euro Series Drivers Recruitment Program, achieving four podium finishes, one pole position, and two Rookie Trophy wins. Now, Andre's sights turn to ascending the American Road to Indy ladder with Marotti Autosport.
 
 <div style="display: grid justify-content: center">
     <h1 style="text-align: center;">Fast Facts</h1>
@@ -20,4 +20,3 @@ After a brief stint in USF2000 which saw Andre achieve two top tens in two weeke
         <li>Games: iRacing, Rocket League, FIFA</li>
     </ul>
 </div>
-
