@@ -19,6 +19,7 @@ description: Andre, a first-generation Colombian-American racecar driver, has
   the 2021 USF2000 Championship.
 intro:
   partners:
+    - image: /img/marotti.png
     - image: /img/grapos.png
     - image: /img/df1.png
     - image: /img/la.png
