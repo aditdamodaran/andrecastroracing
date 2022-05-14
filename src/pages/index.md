@@ -23,5 +23,5 @@ intro:
   partners:
     - image: /img/unnamed.png
     - image: /img/suzwtsik_400x400.jpg
-    - image: /img/mockett-logo_2x_1-original-1-.png
+    - image: /img/mockett-logo-white_2x.png
 ---
