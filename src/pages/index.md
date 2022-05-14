@@ -20,6 +20,7 @@ description: Andre, a first-generation Colombian-American racecar driver, has
   for victories in 2022.
 intro:
   partners:
-    - image: /img/la.png
     - image: /img/unnamed.png
+    - image: /img/suzwtsik_400x400.jpg
+    - image: /img/mockett-logo_2x_1-original-1-.png
 ---
