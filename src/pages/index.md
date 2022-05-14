@@ -15,9 +15,10 @@ description: Andre, a first-generation Colombian-American racecar driver, has
   unique blend of raw racing talent, a meticulous work ethic, and comfort
   performing in the spotlight that sets Andre apart. He proved himself at the
   50th Formula Ford Festival where, representing Team USA, he finished 3rd of 97
-  entries in the most competitive Formula Ford 1600 race in the world. He is
-  working hard to secure the budget necessary to climb the ladder and compete
-  for victories in 2022.
+  entries in the most competitive Formula Ford 1600 race in the world. He was
+  chosen off the back of this performance to lead International Motorsport's new
+  team into the brand-new Road to Indy USF Juniors category for 2022, and earned
+  the team's first ever podium with a 2nd place finish at Barber.
 intro:
   partners:
     - image: /img/unnamed.png
