@@ -10,7 +10,7 @@ Andre began his competitive car racing career in late 2015 during the Skip Barbe
 
 After a brief stint in USF2000 which saw Andre achieve two top tens in two weekends, Andre returned to competition in Colombia's 2018 3 Hours of Bogota, achieving a class victory. He turned to NASCAR in 2019 after being selected for the Whelen Euro Series Drivers Recruitment Program, achieving four podium finishes, one pole position, and two Rookie Trophy wins. Andre returned to USF2000 in 2021, earning three top-ten finishes with a best of eighth in St. Petersburg, which once again got him nominated for the Team USA Scholarship. He proceeded to win the award five years after his first nomination, representing Team USA over several weeks in England, where he claimed a podium finish in the world's most prestigious Formula Ford 1600 race, the Formula Ford Festival.
 
-2022 sees Andre tackling the Road to Indy's inaugural USF Juniors presented by Cooper Tires season. He has finished every race so far in the top 5 and sits third in the standings after earning his team's first ever podium in car racing.
+2022 sees Andre tackling the Road to Indy's inaugural USF Juniors presented by Cooper Tires season for International Motorsport. He is currently in fifth place in the standings after earning the team's first ever podium in car racing. This strong start to the season earned him the opportunity from Al Unser Jr. to close out the F4 US Championship driving for Future Star Racing.
 
 <div style="display: grid justify-content: center">
     <h1 style="text-align: center;">Fast Facts</h1>
