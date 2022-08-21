@@ -17,8 +17,7 @@ After a brief stint in USF2000 which saw Andre achieve two top tens in two weeke
     <ul style="display: grid; justify-content: center">
         <li>Birthdate: January 6, 1999</li>
         <li>Hometown: New York, NY</li>
-        <li>Hobbies: Acting, Cycling, Sim Racing, Karting</li>
-        <li>Favorite Track: Road America</li>
+        <li>Hobbies: Acting, Singing, Music, Sim Racing</li>
         <li>Games: iRacing, Rocket League, FIFA</li>
     </ul>
 </div>
