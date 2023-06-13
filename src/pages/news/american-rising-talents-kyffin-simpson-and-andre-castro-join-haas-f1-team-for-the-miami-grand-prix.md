@@ -3,12 +3,12 @@ templateKey: blog-post
 title: American rising talents Kyffin Simpson and Andre Castro join Haas F1 Team
   for the Miami Grand Prix
 date: 2022-05-11T18:47:48.948Z
-description: Kyffin Simpson and Andre Castro were embedded with the American
-  Formula 1 Team for an unforgettable experience at the inaugural Miami Grand
-  Prix.
+description: >-
+  
+  Kyffin Simpson and Andre Castro were embedded with the American Formula 1 Team for an unforgettable experience at the inaugural Miami Grand Prix.
 featuredpost: true
 displayfeaturedimage: true
-featuredimage: https://fluidideas.s3.eu-west-1.amazonaws.com/haas/s3fs-public/styles/landscape_desktop_1x/public/2022-05/1019125885-lat-20220508-gp2205_103433_onz01751.jpg?VersionId=H1hPrffpEaDSyOrutIqhSZnmbA.nb49L
+featuredimage: /img/1019125885-lat-20220508-gp2205_103433_onz01751.jpeg
 tags:
   - Haas
   - Guenther
