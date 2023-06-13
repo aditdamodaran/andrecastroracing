@@ -24,7 +24,7 @@ description: Andre, a first-generation Colombian-American racecar driver, has
 intro:
   partners:
     - image: /img/unnamed.png
-    - image: /img/suzwtsik_400x400.jpg
-    - image: /img/mockett-logo-white_2x.png
-    - image: /img/futurestarracing-logo-800.webp
+    - image: /img/ucm_logo_master_brand_tagline_full_color_rgb.png
+    - image: /img/wings_wheels_logo_final-500.png
+    - image: /img/diversity_980x660_v4.png
 ---
