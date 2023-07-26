@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Andre Castro Racing
 image: /img/20230701ca684440.jpeg
-image2: /img/acrportrait.jpg
+image2: /img/dsc_4142.jpeg
 description: Andre, a first-generation Colombian-American racecar driver, has
   been behind the wheel since he was seven. Even with limited resources and the
   added challenge of growing up in New York City, Andre has persevered to become
