@@ -16,8 +16,10 @@ description: Andre, a first-generation Colombian-American racecar driver, has
   sets Andre apart. He proved himself at the 50th Formula Ford Festival where,
   representing Team USA, he finished 3rd of 97 entries in the most competitive
   Formula Ford 1600 race in the world. He made his NASCAR Xfinity Series debut
-  in the inaugural Chicago Street Race, representing UChicago Medicine and his
-  alma mater, the University of Chicago College.
+  in the inaugural Chicago Street Race for Jesse Iwuji Motorsports, representing
+  UChicago Medicine and his alma mater, the University of Chicago College; he
+  qualified his way into the race despite having no prior testing or experience
+  in an Xfinity car.
 intro:
   partners:
     - image: /img/unnamed.png
