@@ -3,6 +3,7 @@ templateKey: video-page
 path: /video
 title: VIDEOS
 videos:
+  - https://www.youtube.com/embed/Cy-qDeLKFI8
   - https://www.youtube.com/embed/GUvEtqhJP04
   - https://www.youtube.com/embed/dc7RkEPbWGo
   - https://www.youtube.com/embed/NSXm7nj-u5E
