@@ -24,6 +24,5 @@ intro:
   partners:
     - image: /img/unnamed.png
     - image: /img/diversity_980x660_v4.png
-    - image: /img/screen-shot-2023-07-26-at-12.09.20-am.png
     - image: /img/ucm_logo_master_brand_tagline_white_cmyk.png
 ---
